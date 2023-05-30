@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section class="login" id="login">
+    <div class="contenido-login">
+      <h1 class="fw-bold mb-2 text-uppercase">INGRESO</h1>
+                <p class="text-white-50 mb-5">Por favor, ingresar usuario y clave suministrados</p>
+                <div class="divider d-flex align-items-center my-4"></div>
+                <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+  
+                  <div class="form-floating form-white mb-4">
+                    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+                      [(ngModel)]="nombreUsuario" required />
+                    <label class="form-label" for="nombreUsuario">Usuario</label>
+                  </div>
+  
+                  <div class="form-floating form-white mb-4">
+                    <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password"
+                      required />
+                    <label class="form-label" for="password">Contraseña</label>
+                  </div>
+  
+                  <div class="divider d-flex align-items-center my-4"></div>
+
+                  <button class="btn btn-danger btn-lg px-5 my-4" type="submit">Ingresar</button>
+  
+                </form>
+    </div>
+  </section>
+</body>
+</html>

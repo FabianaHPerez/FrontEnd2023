@@ -39,8 +39,11 @@
                      <a class="nav-link" href="#proyectos">Proyectos</a>
                    </li>
                    <li>
-                     <button type="button" class="btn btn-danger">Iniciar sesión</button>
+                     <button type="button" class="btn btn-danger" (click)="login()" *ngIf="!isLogged">Iniciar sesión</button>
                    </li>
+                   <li>
+                    <button type="button" class="btn btn-danger" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
+                  </li>
                  </ul>
                </div>
              </div>

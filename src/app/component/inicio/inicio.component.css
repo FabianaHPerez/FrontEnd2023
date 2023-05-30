@@ -1,5 +1,5 @@
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)), url(src/assets/fondo_inicio2.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.5),rgba(30,35,38,1)), url(src/assets/fondo_inicio2.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -8,7 +8,7 @@
 }
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background-color: #1f2326;
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -23,13 +23,36 @@
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
-    margin-top: 40px;
+    margin-top: 35px;
     font-size: 42px;
     font-family: 'Righteous';
+    color:#b61c69;
+    font-weight: bold;
+    
 }
 .inicio .contenido-banner h2{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: normal;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+.contenido-typing{
+    width: 310px;
+    animation: animacion 1.5s steps(25), transparent .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#fff;
+}
+@keyframes animacion {
+    from {
+        width: 0;
+    }
+}
+@keyframes transparent{
+    50%{
+        border-color: transparent;
+    }
 }
 .inicio .contenido-banner .redes a{
     color: #fff;

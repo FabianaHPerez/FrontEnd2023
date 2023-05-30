@@ -1,0 +1,42 @@
+.login{
+    background: linear-gradient(to top, rgba(30,35,38,.5),rgba(30,35,38,1)), url(../../../assets/32511-hackers.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.login .contenido-login{
+    padding: 20px;
+    background-color: #30353a;
+    max-width: 600px;
+    margin:auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #bf1b4f;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+h1{
+    font-size:xx-large;
+    padding-top: 10px;
+}
+
+p{
+    padding-top: 20px;
+}
